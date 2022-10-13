@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head
+<body>
+    <h1>nested table</h1>
+    <table border="3" width="100%">
+        <tr bgcolor="purple">
+            <th>header coloum 1</th>
+            <th>header coloum 2</th>
+            <th>header coloum 3</th>
+            <th>header coloum 4</th>
+        </tr>
+        <!-- first row ends here -->
+        <!-- 2nd row starts here -->
+        <tr bgcolor="green">
+        <td>Row 2-item 1</td>
+        <td>Row 2- item 2</td>
+        <td rowspan="2" bgcolor="pink">
+        <!-- <td> nested table start here -->
+           <h4> nested table 1 </h4>
+            <table border="3">
+                <tr>
+                <th> Row 1 Header</th>
+                <td>item</td>
+                </tr>
+                <!-- row 1 ends here -->
+                <tr>
+                <th>Row 2 Header</th>
+                <td>item</td>
+                </tr>
+                <!-- row  2ends here -->
+                <tr>
+                <th>Row 2 Header</th>
+                <td>item</td>
+                </tr>
+                <!-- row 3 ends here -->
+            </table></td>
+    <td>Row 2- Item 4</td></tr>
+        <tr bgcolor="blue">
+        <td rowspan="2" bgcolor="red">
+            <!-- row 3 nested table 2 starts here -->
+       <table border="3">
+        <h4>Row 3 nested table 2</h4>
+        <tr>
+        <th>row 1 header</th><td>item</td>
+        </tr>
+        <tr>
+        <th>row 2 header</th><td>item</td></tr>
+       </table>
+        </td>
+        <!-- row 3 nested table 2 ends here -->
+        <td>
+            Row 3-Item 1
+        </td>
+     <td>
+        <table>
+            <h4>row 3 -item 3</h4>
+        </table>
+        <tr bgcolor="lightblue">
+            <td>row 4- item 1</td>
+            <td>row 4- item 2</td>
+            <td>row 4- item 3</td>
+        </tr>
+     </td>
+        </tr>
+        <tr>
+            <td colspan="4" bgcolor="brown">
+                Row 4- last row of outer table   
+            </td>
+        </tr>
+        
+  
+    
+
+        
+    </table>
+</body>
+</html>
